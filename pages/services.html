@@ -1,32 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Services | GradMentor</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — GradMentor</title>
+  <meta name="description" content="GradMentor's consulting services: MBA admissions, PhD applications, SOP writing, interview prep, and career strategy for top global programs.">
+  <link rel="icon" type="image/png" href="/GM_icon_bg.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
-
 <body>
 
-<header>
-  <h1>GradMentor</h1>
+<header class="site-header">
+  <a class="logo" href="/index.html" aria-label="GradMentor Home">
+    <img src="/H2_horizontal_transparent.png" alt="GradMentor" width="160" height="38" loading="eager">
+  </a>
+  <nav class="nav-links" id="nav">
+    <a href="/index.html">Home</a>
+    <a href="/pages/services.html" class="active">Services</a>
+    <a href="/pages/about.html">About</a>
+    <a href="/pages/contact.html" class="nav-cta">Book a Call</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
-<div class="container">
-  <h2>Our Services</h2>
+<main>
+  <div class="page-header">
+    <div class="page-header-inner">
+      <p class="page-header-label">Our Services</p>
+      <h1>Strategic Guidance, Every Step of the Way</h1>
+      <p>From your first school list to your final offer letter, GradMentor provides premium, end-to-end admissions consulting for MBA and PhD applicants worldwide.</p>
+    </div>
+  </div>
 
-  <h3>Graduate Admissions</h3>
-  <p>MBA, MS, PhD, Medical programs worldwide.</p>
+  <!-- CORE SERVICES -->
+  <section class="section">
+    <div class="section-inner">
+      <p class="section-label">Core Offerings</p>
+      <h2 class="section-title">MBA Admissions Consulting</h2>
+      <p class="section-sub">Comprehensive support for applicants targeting M7, T15, and other top global MBA programs.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          <h3>SOP &amp; Essay Development</h3>
+          <p>We work with you to uncover your most compelling narrative thread and translate it into essays that stand out — structurally, strategically, and stylistically.</p>
+          <a href="/pages/contact.html" class="card-cta">Get started →</a>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <h3>School Selection &amp; Strategy</h3>
+          <p>Building a balanced, realistic, and ambitious school list — factoring GMAT/GRE, GPA, work experience, career goals, and scholarship potential.</p>
+          <a href="/pages/contact.html" class="card-cta">Get started →</a>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <h3>Interview Preparation</h3>
+          <p>Structured mock interviews tailored to each school's format — HBS case method, Booth team-based discussion, Kellogg one-on-one — with detailed debrief.</p>
+          <a href="/pages/contact.html" class="card-cta">Get started →</a>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          <h3>Resume &amp; Recommendation Coaching</h3>
+          <p>MBA resumes follow a precise, one-page format. We craft yours to highlight impact — and coach recommenders on what to say and how to say it.</p>
+          <a href="/pages/contact.html" class="card-cta">Get started →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h3>Application Support</h3>
-  <p>SOPs, essays, resumes, school selection.</p>
+  <hr class="gold-rule">
 
-  <h3>Career Advisory</h3>
-  <p>Global career planning and transitions.</p>
+  <!-- PHD -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <p class="section-label">Research Programs</p>
+      <h2 class="section-title">PhD &amp; Research Admissions</h2>
+      <p class="section-sub">For applicants targeting funded doctoral programs in business, economics, policy, and related fields at top US, European, and global institutions.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+          <h3>Statement of Purpose</h3>
+          <p>A PhD SOP is fundamentally different from an MBA essay. We help you frame your research trajectory, highlight academic fit, and connect to specific faculty work.</p>
+          <a href="/pages/contact.html" class="card-cta">Get started →</a>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+          <h3>Research Proposal</h3>
+          <p>For programs that require a research proposal, we help you identify a compelling research gap and articulate a methodologically sound proposal.</p>
+          <a href="/pages/contact.html" class="card-cta">Get started →</a>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
+          <h3>Faculty Outreach Strategy</h3>
+          <p>We identify aligned faculty, craft targeted outreach emails, and help you build advisor relationships that significantly strengthen your application.</p>
+          <a href="/pages/contact.html" class="card-cta">Get started →</a>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          <h3>Application Portfolio Review</h3>
+          <p>Complete review of all application components — CV, writing samples, transcripts strategy, and references — to ensure a coherent, competitive package.</p>
+          <a href="/pages/contact.html" class="card-cta">Get started →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h3>Post Admission</h3>
-  <p>Visa, relocation, and settling guidance.</p>
+  <hr class="gold-rule">
 
-</div>
+  <!-- PRICING -->
+  <section class="section">
+    <div class="section-inner">
+      <p class="section-label">Packages</p>
+      <h2 class="section-title">Transparent, Value-Driven Pricing</h2>
+      <p class="section-sub">All engagements are scoped 1-on-1. No cookie-cutter packages — but the tiers below give you a starting point. Contact us for a custom quote.</p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Essentials</h3>
+          <p class="pricing-tagline">For focused, single-component support</p>
+          <div class="pricing-price">Custom <span>/ per project</span></div>
+          <ul class="pricing-features">
+            <li>SOP or essay review &amp; feedback (up to 2 rounds)</li>
+            <li>Resume review &amp; restructuring</li>
+            <li>Single school strategy session</li>
+            <li>Email support throughout</li>
+          </ul>
+          <a href="/pages/contact.html" class="btn-outline">Enquire</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="featured-badge">Most Popular</div>
+          <h3>Comprehensive</h3>
+          <p class="pricing-tagline">Full-cycle MBA or PhD application support</p>
+          <div class="pricing-price">Custom <span>/ per cycle</span></div>
+          <ul class="pricing-features">
+            <li>School selection &amp; strategy mapping</li>
+            <li>Full essay suite — all schools</li>
+            <li>Resume &amp; recommendation coaching</li>
+            <li>Interview preparation (3 mock sessions)</li>
+            <li>Waitlist &amp; scholarship strategy</li>
+            <li>Dedicated advisor throughout</li>
+          </ul>
+          <a href="/pages/contact.html" class="btn-primary">Book a Discovery Call</a>
+        </div>
+        <div class="pricing-card">
+          <h3>PhD Specialist</h3>
+          <p class="pricing-tagline">Doctoral program applications</p>
+          <div class="pricing-price">Custom <span>/ per cycle</span></div>
+          <ul class="pricing-features">
+            <li>SOP — multiple rounds of deep revision</li>
+            <li>Research proposal development</li>
+            <li>Faculty outreach — up to 10 professors</li>
+            <li>CV &amp; writing sample coaching</li>
+            <li>Interview preparation</li>
+          </ul>
+          <a href="/pages/contact.html" class="btn-outline">Enquire</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- CTA -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-banner">
+        <h2>Not Sure Where to Start?</h2>
+        <p>Book a free 30-minute call. We'll review your profile, discuss your targets, and recommend the right engagement level — no obligations.</p>
+        <a href="/pages/contact.html" class="btn-primary">Schedule Free Consultation</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="/H2_horizontal_transparent.png" alt="GradMentor" width="120" height="28" loading="lazy">
+    </div>
+    <nav class="footer-links">
+      <a href="/pages/services.html">Services</a>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 GradMentor. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
 </body>
 </html>

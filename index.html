@@ -1,67 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>GradMentor | Global Admissions & Career Guidance</title>
-
-  <meta name="description" content="MBA, MS & MA, PhD and Medical admissions guidance. Personalized mentoring for global academic and career success.">
-
-  <link rel="icon" href="/GM_icon_bg.png">
-
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-
-  <style>
-    .hero { padding: 140px 80px; max-width: 900px; }
-    .hero h1 { font-size: 56px; font-family: 'Playfair Display'; }
-    .hero p { color: #9ca3af; margin-top: 15px; }
-
-    .strip {
-      display: flex;
-      overflow-x: auto;
-      gap: 20px;
-      padding-top: 20px;
-    }
-
-    .advisor {
-      min-width: 200px;
-      border: 1px solid rgba(255,255,255,0.08);
-      padding: 15px;
-      background: rgba(255,255,255,0.02);
-    }
-
-    .advisor img {
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
-
-    .section { padding: 100px 80px; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GradMentor — Guide. Strategize. Succeed.</title>
+  <meta name="description" content="GradMentor offers elite MBA and PhD admissions consulting — SOP writing, interview prep, and career strategy for high-achievers aiming for top global programs.">
+  <link rel="icon" type="image/png" href="/GM_icon_bg.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
-
 <body>
 
-<header>
-  <h1>
-    <a href="/index.html">
-      <img src="/H2_horizontal_transparent.png" style="height:42px;">
-    </a>
-  </h1>
-  <nav>
-    <a href="/index.html">Home</a>
+<header class="site-header">
+  <a class="logo" href="/index.html" aria-label="GradMentor Home">
+    <img src="/H2_horizontal_transparent.png" alt="GradMentor" width="160" height="38" loading="eager">
+  </a>
+  <nav class="nav-links" id="nav">
+    <a href="/index.html" class="active">Home</a>
     <a href="/pages/services.html">Services</a>
     <a href="/pages/about.html">About</a>
-    <a href="/pages/contact.html">Contact</a>
+    <a href="/pages/contact.html" class="nav-cta">Book a Call</a>
   </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
-<div class="hero">
-  <h1>Start your journey by booking a session</h1>
-  <p>MBA • MS & MA • PhD • Medical Admissions & Career Guidance</p>
-  <br>
-  <a class="btn" href="https://calendly.com/emil-binny/coffee-chat">Start Your Journey</a>
-</div>
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Elite Admissions Consulting</p>
+      <h1>Your Roadmap to <em>Top Global</em> Programs</h1>
+      <p class="hero-sub">GradMentor provides strategic, one-on-one guidance for MBA and PhD applicants — from crafting a compelling narrative to landing admits at Harvard, Wharton, Stanford, and beyond.</p>
+      <div class="hero-actions">
+        <a href="/pages/contact.html" class="btn-primary">Book a Free Consultation</a>
+        <a href="/pages/services.html" class="btn-outline">Explore Services</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <span class="stat-num">Top 10</span>
+          <span class="stat-label">MBA &amp; PhD admits</span>
+        </div>
+        <div>
+          <span class="stat-num">1-on-1</span>
+          <span class="stat-label">Personalised strategy</span>
+        </div>
+        <div>
+          <span class="stat-num">Global</span>
+          <span class="stat-label">Clientele &amp; network</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <hr class="gold-rule">
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="section">
+    <div class="section-inner">
+      <p class="section-label">What We Do</p>
+      <h2 class="section-title">Services Built for High-Achievers</h2>
+      <p class="section-sub">Whether you're targeting an MBA at a M7 school or a funded PhD in business or policy, GradMentor crafts a strategy that fits your unique profile and ambition.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          <h3>SOP &amp; Essay Writing</h3>
+          <p>A compelling story is your most powerful asset. We help you articulate your journey, goals, and fit in essays that adcoms remember.</p>
+          <a href="/pages/services.html" class="card-cta">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <h3>Interview Preparation</h3>
+          <p>From HBS R1 to Booth team-based discussions — we run live mock interviews, debrief every answer, and sharpen your presence.</p>
+          <a href="/pages/services.html" class="card-cta">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          <h3>PhD Application Strategy</h3>
+          <p>Statement of purpose, research proposal, professor outreach — we guide funded PhD applicants to top research programs worldwide.</p>
+          <a href="/pages/services.html" class="card-cta">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          <h3>Career &amp; Post-MBA Strategy</h3>
+          <p>Consulting, finance, tech, or entrepreneurship — we help you build a post-MBA career narrative that aligns with your long-term goals.</p>
+          <a href="/pages/services.html" class="card-cta">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY GRADMENTOR -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <p class="section-label">Why GradMentor</p>
+      <h2 class="section-title">A Premium Advisory Firm, Not a Freelancer Site</h2>
+      <p class="section-sub">GradMentor operates like a boutique consulting firm — with rigorous intake, a defined engagement model, and results-oriented milestones at every step.</p>
+      <div class="process-list">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h3>Deep-Dive Strategy Session</h3>
+            <p>We begin with a thorough analysis of your profile, goals, and target programs — mapping out a custom roadmap before a single word is written.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h3>Narrative Architecture</h3>
+            <p>Your SOP and essays are structured around a single, coherent "thread" — a story that connects your past, present, and future compellingly.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h3>Iterative Review &amp; Refinement</h3>
+            <p>Multiple rounds of detailed feedback — not line edits, but strategic restructuring to ensure every paragraph earns its place.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">04</span>
+          <div class="step-content">
+            <h3>Interview &amp; Offer Strategy</h3>
+            <p>From mock interviews to waitlist strategy and scholarship negotiation — we stay engaged right through to final offer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="section-inner">
+      <p class="section-label">Client Voices</p>
+      <h2 class="section-title">Results That Speak</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <blockquote>GradMentor helped me move from a scattered application to a cohesive narrative. I got into my target program with a scholarship I didn't expect.</blockquote>
+          <div class="testimonial-meta">
+            <strong>Admitted — Top 10 MBA Program</strong>
+            International Applicant, Finance Background
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>The PhD strategy guidance was exceptional. Professor outreach, research proposal framing, SOP — covered end to end. I have two funded admits.</blockquote>
+          <div class="testimonial-meta">
+            <strong>Admitted — Funded PhD, US University</strong>
+            Applicant from India, Strategy & Policy
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>What sets GradMentor apart is the strategic clarity. I wasn't just told what to write — I was shown exactly why each choice mattered.</blockquote>
+          <div class="testimonial-meta">
+            <strong>Admitted — M7 MBA</strong>
+            Career Switcher, Technology Sector
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-banner">
+        <h2>Ready to Begin?</h2>
+        <p>Book a free 30-minute discovery call to discuss your profile, target programs, and how GradMentor can accelerate your admissions journey.</p>
+        <a href="/pages/contact.html" class="btn-primary">Schedule Your Free Call</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="/H2_horizontal_transparent.png" alt="GradMentor" width="120" height="28" loading="lazy">
+    </div>
+    <nav class="footer-links">
+      <a href="/pages/services.html">Services</a>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 GradMentor. All rights reserved.<br>guide.strategize.succeed.</p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
 </body>
 </html>

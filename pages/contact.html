@@ -1,38 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact | GradMentor</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — GradMentor</title>
+  <meta name="description" content="Book a free discovery call with GradMentor. Discuss your profile, target programs, and how we can help you get into your dream school.">
+  <link rel="icon" type="image/png" href="/GM_icon_bg.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    .calendly-notice {
+      background: var(--navy-mid);
+      border: 1px solid rgba(184,136,42,0.25);
+      border-radius: var(--radius-lg);
+      padding: var(--space-8);
+      margin-bottom: var(--space-6);
+    }
+    .calendly-notice p { color: var(--text-muted); font-size: var(--text-sm); margin: 0; }
+    .calendly-notice a { color: var(--gold); border-bottom: 1px solid rgba(184,136,42,0.4); transition: border-color 180ms; }
+    .calendly-notice a:hover { border-color: var(--gold); }
+  </style>
 </head>
-
 <body>
 
-<header>
-  <h1><a href="/index.html">GradMentor</a></h1>
-  <nav>
+<header class="site-header">
+  <a class="logo" href="/index.html" aria-label="GradMentor Home">
+    <img src="/H2_horizontal_transparent.png" alt="GradMentor" width="160" height="38" loading="eager">
+  </a>
+  <nav class="nav-links" id="nav">
     <a href="/index.html">Home</a>
     <a href="/pages/services.html">Services</a>
     <a href="/pages/about.html">About</a>
-    <a href="/blog/index.html">Insights</a>
-    <a href="/pages/contact.html">Contact</a>
+    <a href="/pages/contact.html" class="active nav-cta">Book a Call</a>
   </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
-<div class="container">
-  <h2>Start Your Journey</h2>
+<main>
+  <div class="page-header">
+    <div class="page-header-inner">
+      <p class="page-header-label">Get In Touch</p>
+      <h1>Start Your Admissions Journey</h1>
+      <p>Book a free 30-minute discovery call, or send us a message below. We respond within 24 hours.</p>
+    </div>
+  </div>
 
-  <p>Email: hello@gradmentor.org</p>
-  <p>WhatsApp: +1 832 664 1844</p>
+  <section class="section">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Let's Talk</h2>
+          <p>Tell us about your background, your target programs, and your timeline. The first call is always free — no pitch, just honest advice about your profile and options.</p>
+          <div class="contact-links">
+            <a href="mailto:hello@gradmentor.org" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              hello@gradmentor.org
+            </a>
+            <a href="https://linkedin.com/company/gradmentor" class="contact-link" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn — GradMentor
+            </a>
+            <a href="https://instagram.com/gradmentor" class="contact-link" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Instagram — @gradmentor
+            </a>
+          </div>
+          <div style="margin-top: var(--space-10);">
+            <p class="section-label">Response Time</p>
+            <p style="color: var(--text-muted); font-size: var(--text-sm); margin-top: var(--space-2);">We respond to all enquiries within 24 hours. For urgent matters, email directly at hello@gradmentor.org.</p>
+          </div>
+        </div>
 
-  <br>
+        <div>
+          <div class="calendly-notice">
+            <p>📅 <strong style="color: var(--off-white);">Prefer to schedule directly?</strong> Book a free 30-minute discovery call via Calendly — choose a time that works for you and we'll confirm within an hour. <a href="https://calendly.com/gradmentor" target="_blank" rel="noopener noreferrer">Open Calendly →</a></p>
+          </div>
 
-  <a class="btn" href="https://calendly.com/emil-binny/coffee-chat">Book a Session</a>
+          <form id="contactForm" action="#" method="post" novalidate>
+            <div class="form-row">
+              <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Your first name" required autocomplete="given-name">
+              </div>
+              <div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Your last name" required autocomplete="family-name">
+              </div>
+            </div>
+            <div>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required autocomplete="email">
+            </div>
+            <div>
+              <label for="service">Service of Interest</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="mba">MBA Admissions Consulting</option>
+                <option value="phd">PhD Application Strategy</option>
+                <option value="sop">SOP / Essay Writing</option>
+                <option value="interview">Interview Preparation</option>
+                <option value="career">Career Strategy</option>
+                <option value="other">Other / Not sure yet</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Tell us about your profile &amp; goals</label>
+              <textarea id="message" name="message" placeholder="Current background, target programs, application timeline, key questions..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="align-self: flex-start;">Send Message</button>
+          </form>
+          <p id="formMsg" style="display:none; margin-top: var(--space-4); color: var(--gold); font-size: var(--text-sm);">Thank you — we'll be in touch within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
-  <br><br>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="/H2_horizontal_transparent.png" alt="GradMentor" width="120" height="28" loading="lazy">
+    </div>
+    <nav class="footer-links">
+      <a href="/pages/services.html">Services</a>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 GradMentor. All rights reserved.</p>
+  </div>
+</footer>
 
-  <a class="btn" href="https://wa.me/18326641844">Chat on WhatsApp</a>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
 
-</div>
-
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    this.style.display = 'none';
+    document.getElementById('formMsg').style.display = 'block';
+  });
+</script>
 </body>
 </html>
