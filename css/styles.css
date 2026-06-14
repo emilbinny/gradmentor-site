@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5 {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  padding: 1.25rem 0;
+  padding: 1rem 0;
   transition: all var(--transition);
   background: transparent;
 }
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5 {
   background: rgba(15, 23, 32, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  padding: 0.75rem 0;
+  padding: 0.6rem 0;
   border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -107,14 +107,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar-logo img {
-  height: 46px;
+  height: 80px;
   width: auto;
-  max-width: 230px;
+  max-width: 400px;
   transition: height var(--transition);
 }
 
 .navbar.scrolled .navbar-logo img {
-  height: 40px;
+  height: 70px;
 }
 
 .nav-links {
@@ -213,8 +213,8 @@ h1, h2, h3, h4, h5 {
 .hero .container {
   position: relative;
   z-index: 1;
-  padding-top: 6rem;
-  padding-bottom: 4rem;
+  padding-top: 9rem;
+  padding-bottom: 5rem;
 }
 
 .hero-overline {
@@ -237,12 +237,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero h1 {
-  font-size: clamp(3rem, 6.5vw, 5.5rem);
+  font-size: clamp(3.5rem, 7.5vw, 6.5rem);
   font-weight: 400;
   color: var(--text-primary);
-  margin-bottom: 1.75rem;
-  max-width: 860px;
-  line-height: 1.1;
+  margin-bottom: 2rem;
+  max-width: 960px;
+  line-height: 1.08;
 }
 
 .hero h1 em {
@@ -251,10 +251,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero-description {
-  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  font-size: clamp(1.15rem, 1.7vw, 1.45rem);
   color: var(--text-secondary);
-  max-width: 640px;
-  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-bottom: 3.25rem;
   font-weight: 300;
   line-height: 1.85;
 }
@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5 {
 
 .hero-stat-number {
   font-family: var(--font-display);
-  font-size: 2.25rem;
+  font-size: 2.75rem;
   color: var(--gold);
   font-weight: 500;
 }
@@ -1461,4 +1461,223 @@ h1, h2, h3, h4, h5 {
 }
 .blog-card-tags .blog-tag {
   margin: 0;
+}
+
+/* === RESOURCES / DOWNLOAD PAGE === */
+.resources-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+@media (max-width: 860px) {
+  .resources-layout { grid-template-columns: 1fr; gap: 2rem; }
+}
+.resources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.resource-card {
+  background: var(--navy);
+  border: 1px solid var(--border-subtle);
+  padding: 1.75rem;
+  transition: all var(--transition);
+}
+.resource-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-2px);
+}
+.resource-tag {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+.resource-card h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
+}
+.resource-card p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 0.8rem;
+}
+.resource-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.resources-form-wrap {
+  position: sticky;
+  top: 110px;
+}
+.resources-form-card {
+  background: var(--section-accent, #16202e);
+  border: 1px solid var(--border-gold);
+  padding: 2.25rem;
+}
+.resources-form-card h2 {
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+.form-intro {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+/* Style MailerLite embedded form fields to match site */
+.resources-form-card input[type="text"],
+.resources-form-card input[type="email"],
+.resources-form-card input[type="tel"],
+.resources-form-card .ml-form-formContent input {
+  width: 100%;
+  background: var(--navy-deep, #131b27);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  padding: 0.85rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+}
+.resources-form-card input::placeholder { color: var(--text-muted); }
+.resources-form-card button,
+.resources-form-card input[type="submit"],
+.resources-form-card .primary {
+  width: 100%;
+  background: var(--gold) !important;
+  color: var(--navy-deep) !important;
+  border: none !important;
+  padding: 0.95rem 1.5rem !important;
+  font-family: var(--font-body) !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-radius: 2px !important;
+  transition: background var(--transition);
+}
+.resources-form-card button:hover,
+.resources-form-card .primary:hover { background: var(--gold-soft, #d9b96e) !important; }
+
+/* === HOMEPAGE LEAD-MAGNET BAND === */
+.leadmagnet-band {
+  background: var(--section-accent, #16202e);
+  border-top: 1px solid var(--border-gold);
+  border-bottom: 1px solid var(--border-gold);
+}
+.leadmagnet-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.leadmagnet-text h2 {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  color: var(--text-primary);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.leadmagnet-text p {
+  color: var(--text-secondary);
+  font-weight: 300;
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+/* === MAILERLITE FORM OVERRIDE — match navy/gold site theme === */
+#mlb2-42579991.ml-form-embedContainer .ml-form-embedWrapper,
+.ml-form-embedContainer .ml-form-embedWrapper {
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.ml-form-embedContainer .ml-form-embedWrapper.embedForm {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.ml-form-embedContainer .ml-form-embedBody {
+  padding: 0 !important;
+}
+/* Hide the default MailerLite heading/subtext since our page already has them */
+.resources-form-card .ml-form-embedContent {
+  display: none !important;
+}
+/* Inputs */
+.ml-form-embedContainer .ml-form-fieldRow input[type="email"],
+.ml-form-embedContainer .ml-form-fieldRow input[type="text"] {
+  background-color: #0f1824 !important;
+  color: #f5f1eb !important;
+  border: 1px solid rgba(201,150,59,0.25) !important;
+  border-radius: 2px !important;
+  font-family: var(--font-body) !important;
+  font-size: 0.95rem !important;
+  padding: 0.85rem 1rem !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  margin-bottom: 0.75rem !important;
+  transition: border-color 0.2s ease;
+}
+.ml-form-embedContainer .ml-form-fieldRow input:focus {
+  border-color: var(--gold, #c9963b) !important;
+  outline: none !important;
+}
+.ml-form-embedContainer .ml-form-fieldRow input::placeholder {
+  color: rgba(245,241,235,0.45) !important;
+}
+/* Labels */
+.ml-form-embedContainer .ml-field-group label {
+  color: rgba(245,241,235,0.75) !important;
+  font-family: var(--font-body) !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+/* Submit button */
+.ml-form-embedContainer .ml-form-embedSubmit button.primary {
+  background-color: #c9963b !important;
+  border: none !important;
+  border-radius: 2px !important;
+  color: #1a2332 !important;
+  font-family: var(--font-body) !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  padding: 1rem 1.5rem !important;
+  width: 100% !important;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: background-color 0.2s ease;
+}
+.ml-form-embedContainer .ml-form-embedSubmit button.primary:hover {
+  background-color: #d9b96e !important;
+}
+/* Success message */
+.ml-form-embedContainer .ml-form-successBody {
+  background: transparent !important;
+}
+.ml-form-embedContainer .ml-form-successContent h4 {
+  color: #c9963b !important;
+  font-family: var(--font-display) !important;
+  font-size: 1.4rem !important;
+}
+.ml-form-embedContainer .ml-form-successContent p {
+  color: rgba(245,241,235,0.8) !important;
+  font-family: var(--font-body) !important;
 }
