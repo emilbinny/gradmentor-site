@@ -19,8 +19,8 @@
   --cream-dark: #e8e2d8;
   --white: #ffffff;
   --text-primary: #f5f1eb;
-  --text-secondary: rgba(245, 241, 235, 0.7);
-  --text-muted: rgba(245, 241, 235, 0.45);
+  --text-secondary: rgba(245, 241, 235, 0.85);
+  --text-muted: rgba(245, 241, 235, 0.62);
   --border-subtle: rgba(201, 150, 59, 0.12);
   --border-gold: rgba(201, 150, 59, 0.3);
   --section-dark: #0f1720;
@@ -107,15 +107,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar-logo img {
-  height: 40px;
+  height: 46px;
   width: auto;
-  max-width: 210px;
+  max-width: 230px;
   transition: height var(--transition);
-  filter: brightness(1.1) contrast(1.05);
 }
 
 .navbar.scrolled .navbar-logo img {
-  height: 34px;
+  height: 40px;
 }
 
 .nav-links {
@@ -220,9 +219,9 @@ h1, h2, h3, h4, h5 {
 
 .hero-overline {
   font-family: var(--font-body);
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.25em;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 1.5rem;
@@ -357,9 +356,9 @@ h1, h2, h3, h4, h5 {
 
 .section-overline {
   font-family: var(--font-body);
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.25em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 1rem;
@@ -430,12 +429,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .service-icon {
-  font-size: 0.7rem;
+  font-size: 1.1rem;
   color: var(--gold);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 1.25rem;
+  opacity: 1;
 }
 
 .service-card h3 {
@@ -800,7 +800,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .footer-brand img {
-  height: 36px;
+  height: 54px;
+  width: auto;
   margin-bottom: 1rem;
 }
 
