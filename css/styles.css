@@ -107,13 +107,15 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar-logo img {
-  height: 44px;
+  height: 40px;
   width: auto;
+  max-width: 210px;
   transition: height var(--transition);
+  filter: brightness(1.1) contrast(1.05);
 }
 
 .navbar.scrolled .navbar-logo img {
-  height: 36px;
+  height: 34px;
 }
 
 .nav-links {
@@ -236,11 +238,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero h1 {
-  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  font-size: clamp(3rem, 6.5vw, 5.5rem);
   font-weight: 400;
   color: var(--text-primary);
-  margin-bottom: 1.5rem;
-  max-width: 800px;
+  margin-bottom: 1.75rem;
+  max-width: 860px;
+  line-height: 1.1;
 }
 
 .hero h1 em {
@@ -249,12 +252,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero-description {
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
   color: var(--text-secondary);
-  max-width: 600px;
-  margin-bottom: 2.5rem;
+  max-width: 640px;
+  margin-bottom: 3rem;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.85;
 }
 
 .hero-actions {
@@ -278,17 +281,17 @@ h1, h2, h3, h4, h5 {
 
 .hero-stat-number {
   font-family: var(--font-display);
-  font-size: 1.75rem;
+  font-size: 2.25rem;
   color: var(--gold);
   font-weight: 500;
 }
 
 .hero-stat-label {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-top: 0.25rem;
+  margin-top: 0.35rem;
 }
 
 /* === BUTTONS === */
@@ -666,15 +669,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .blog-card-image {
-  height: 200px;
-  background: var(--navy-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.7rem;
-  color: var(--text-muted);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  display: none;
 }
 
 .blog-card-content {
@@ -1396,4 +1391,73 @@ h1, h2, h3, h4, h5 {
   border: 2px solid var(--border-gold);
   margin: 0 auto 1rem;
   display: block;
+}
+
+/* === ADVISOR CARD LINK HOVER === */
+.advisor-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 2px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.advisor-card-link:hover {
+  transform: translateY(-4px);
+}
+.advisor-card-link:hover .advisor-card {
+  border-color: var(--gold);
+  box-shadow: 0 8px 32px rgba(201,150,59,0.15);
+}
+.advisor-card-link:hover .advisor-card::after {
+  content: "View LinkedIn ↗";
+  display: block;
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 0.75rem;
+  opacity: 0.9;
+}
+
+/* === BLOG FILTER BAR === */
+.blog-filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.blog-filter-btn {
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.45rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.blog-filter-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+.blog-filter-btn.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--navy-deep);
+  font-weight: 600;
+}
+
+/* === BLOG CARD MULTI-TAGS === */
+.blog-card-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+.blog-card-tags .blog-tag {
+  margin: 0;
 }

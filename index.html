@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNTJX7KWZW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FNTJX7KWZW');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GradMentor — Admissions & Career Advisory for MBA, PhD & MS Applicants</title>
@@ -40,7 +48,7 @@
     "@type": "EducationalOrganization",
     "name": "GradMentor",
     "url": "https://gradmentor.org",
-    "logo": "https://gradmentor.org/assets/img/logo-horizontal.png",
+    "logo": "https://gradmentor.org/assets/img/logo-horizontal-transparent.png",
     "description": "Premium admissions and career advisory platform for MBA, MS, MA, PhD, and medical programs.",
     "email": "hello@gradmentor.org",
     "sameAs": [
@@ -60,7 +68,7 @@
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="/" class="navbar-logo">
-        <img src="assets/img/logo-horizontal.png" alt="GradMentor">
+        <img src="assets/img/logo-horizontal-transparent.png" alt="GradMentor" style="height:38px;width:auto;">
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
@@ -78,11 +86,14 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container">
+      <div style="margin-bottom:2rem;">
+        <img src="assets/img/logo-banner.png" alt="GradMentor" style="height:auto;width:clamp(200px,40%,320px);opacity:0.97;">
+      </div>
       <div class="hero-overline">Boutique Admissions Advisory</div>
       <h1>A Considered Path to the <em>Programs You Want</em></h1>
       <p class="hero-description">GradMentor provides strategic, one-on-one guidance for MBA, MS, MA, PhD, and medical applicants — from building a compelling narrative to earning competitive offers at the programmes that fit your goals.</p>
       <div class="hero-actions">
-        <a href="pages/contact.html" class="btn-primary">Book a Free Consultation <span class="btn-arrow">→</span></a>
+        <a href="pages/contact.html" class="btn-primary">Reserve a Complimentary Session <span class="btn-arrow">→</span></a>
         <a href="pages/services.html" class="btn-secondary">Explore Services <span class="btn-arrow">→</span></a>
       </div>
       <div class="hero-stats">
@@ -156,7 +167,7 @@
     <div class="container">
       <div class="section-header animate-in">
         <div class="section-overline">Why GradMentor</div>
-        <h2 class="section-title">A Premium Advisory Firm, Not a Freelancer Site</h2>
+        <h2 class="section-title">A Structured Engagement, Not a Transaction</h2>
         <p class="section-subtitle">GradMentor operates like a boutique consulting firm — with rigorous intake, a defined engagement model, and results-oriented milestones.</p>
       </div>
       <div class="process-steps">
@@ -189,50 +200,50 @@
         <p class="section-subtitle">GradMentor is led personally by Emil Binny, who handles every MBA and Business PhD engagement directly. For MS, medical, STEM PhD, and specialist tracks, candidates are matched to vetted advisors from a curated network — each with direct, first-hand experience at top programmes.</p>
       </div>
       <div class="advisor-strip" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;">
-        <div class="advisor-card" style="text-align:center;">
-          <div class="advisor-photo" style="width:90px;height:90px;border-radius:50%;margin:0 auto 1rem;background:var(--navy-light);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.4rem;color:var(--gold);border:2px solid var(--border-gold);">EB</div>
+        <a href="https://www.linkedin.com/in/emilbinny/" target="_blank" rel="noopener" class="advisor-card-link" style="text-decoration:none;color:inherit;"><div class="advisor-card" style="text-align:center;">
+          <img src="assets/img/advisors/advisor-emil.jpg" alt="Emil Mathew Binny" style="width:90px;height:90px;border-radius:50%;margin:0 auto 1rem;display:block;object-fit:cover;border:2px solid var(--border-gold);">
           <h4>Emil Mathew Binny</h4>
           <div class="advisor-title">Founder &amp; Principal Advisor</div>
           <div class="advisor-university" style="margin:.25rem 0 .6rem;">Rutgers · Rice · JNU</div>
           <p class="advisor-desc">Incoming PhD, International Business &amp; Strategy, Rutgers Business School (funded, Fall 2026). MBA, Rice University. 250+ candidate evaluations as Rice MBA Admissions Ambassador. Handles MBA and Business PhD strategy personally.</p>
-          <a href="https://emilbinny.com/about.html" class="service-link" target="_blank" rel="noopener" style="margin-top:.75rem;display:inline-block;">Full profile →</a>
-        </div>
-        <div class="advisor-card" style="text-align:center;">
+          <a href="https://emilbinny.com/about.html" class="service-link" target="_blank" rel="noopener" style="margin-top:.75rem;display:inline-block;">Full profile →
+        </div></a>
+        <a href="https://www.linkedin.com/in/anvy-kuriakose-6100b5122/" target="_blank" rel="noopener" class="advisor-card-link" style="text-decoration:none;color:inherit;"><div class="advisor-card" style="text-align:center;">
           <img src="assets/img/advisors/advisor-anvy.jpg" alt="Anvy Kuriakose" style="width:90px;height:90px;border-radius:50%;margin:0 auto 1rem;display:block;object-fit:cover;border:2px solid var(--border-gold);">
           <h4>Anvy Kuriakose</h4>
           <div class="advisor-title">MS &amp; STEM PhD Advisor</div>
           <div class="advisor-university" style="margin:.25rem 0 .6rem;">Rice University (PhD Candidate)</div>
           <p class="advisor-desc">PhD candidate, Applied Physics, Rice University (Bioengineering track). MS Physics, Rice. BS-MS Chemistry, IISER Thiruvananthapuram. Published in ACS Nano Letters and JPCC. INSPIRE Fellow. Instructor of Record, Rice. Specialises in STEM MS and PhD applications.</p>
-        </div>
-        <div class="advisor-card" style="text-align:center;">
+        </div></a>
+        <a href="https://www.linkedin.com/in/shihas-abdul-razak-86a523195/" target="_blank" rel="noopener" class="advisor-card-link" style="text-decoration:none;color:inherit;"><div class="advisor-card" style="text-align:center;">
           <img src="assets/img/advisors/advisor-shihas.jpg" alt="Shihas Abdul Razak" style="width:90px;height:90px;border-radius:50%;margin:0 auto 1rem;display:block;object-fit:cover;border:2px solid var(--border-gold);">
           <h4>Shihas Abdul Razak</h4>
           <div class="advisor-title">Economics PhD Advisor</div>
-          <div class="advisor-university" style="margin:.25rem 0 .6rem;">Yale University (Predoc)</div>
-          <p class="advisor-desc">Predoctoral Research Assistant to Prof. Mushfiq Mobarak, Yale (Y-RISE). MA Applied Economics, JNU. Research experience at Yale, IIM Bangalore, RBI, and Kerala State Planning Board. Weiss Fund Kabir Banerjee Fellow. Specialises in Economics and Development PhD applications.</p>
-        </div>
-        <div class="advisor-card" style="text-align:center;">
+          <div class="advisor-university" style="margin:.25rem 0 .6rem;">University of Pittsburgh (PhD Candidate)</div>
+          <p class="advisor-desc">PhD candidate in Economics, University of Pittsburgh. Former predoctoral RA to Prof. Mushfiq Mobarak at Yale (Y-RISE). MA Applied Economics, JNU. Research experience at Yale, IIM Bangalore, RBI, and Kerala State Planning Board. Weiss Fund Kabir Banerjee Fellow. Specialises in Economics and Development PhD applications.</p>
+        </div></a>
+        <a href="https://www.linkedin.com/in/alihaydarrice/" target="_blank" rel="noopener" class="advisor-card-link" style="text-decoration:none;color:inherit;"><div class="advisor-card" style="text-align:center;">
           <img src="assets/img/advisors/advisor-ali.jpg" alt="Ali Haydar" style="width:90px;height:90px;border-radius:50%;margin:0 auto 1rem;display:block;object-fit:cover;border:2px solid var(--border-gold);">
           <h4>Ali Haydar</h4>
           <div class="advisor-title">MBA &amp; Accounting PhD Advisor</div>
           <div class="advisor-university" style="margin:.25rem 0 .6rem;">Rice University (MBA, GMAT 760)</div>
           <p class="advisor-desc">MBA, Rice Jones School (100% scholarship). GMAT 760 (99th percentile). Assistant Professor of Accounting, PSTU Bangladesh. RA under Prof. Patricia Naranjo, Rice. Teaching Excellence Award. Specialises in MBA admissions for finance and accounting profiles, and Accounting PhD applications.</p>
-        </div>
-        <div class="advisor-card" style="text-align:center;">
+        </div></a>
+        <a href="https://www.linkedin.com/in/cynthia-ann-binny/" target="_blank" rel="noopener" class="advisor-card-link" style="text-decoration:none;color:inherit;"><div class="advisor-card" style="text-align:center;">
           <img src="assets/img/advisors/advisor-cynthia.jpg" alt="Cynthia Ann Binny" style="width:90px;height:90px;border-radius:50%;margin:0 auto 1rem;display:block;object-fit:cover;border:2px solid var(--border-gold);">
           <h4>Cynthia Ann Binny</h4>
           <div class="advisor-title">MS Advisor</div>
           <div class="advisor-university" style="margin:.25rem 0 .6rem;">NIFT (M.Des)</div>
           <p class="advisor-desc">M.Des, National Institute of Fashion Technology. Preparing for a Design PhD. Advises applicants targeting design, architecture, and creative arts programmes — SOP development, portfolio strategy, and programme shortlisting.</p>
-        </div>
-        <div class="advisor-card" style="text-align:center;">
+        </div></a>
+        <a href="https://www.linkedin.com/in/swathi-sreekuttan/" target="_blank" rel="noopener" class="advisor-card-link" style="text-decoration:none;color:inherit;"><div class="advisor-card" style="text-align:center;">
           <img src="assets/img/advisors/advisor-swathi.jpg" alt="Swathi Sreekuttan" style="width:90px;height:90px;border-radius:50%;margin:0 auto 1rem;display:block;object-fit:cover;border:2px solid var(--border-gold);">
           <h4>Swathi Sreekuttan</h4>
-          <div class="advisor-title">MS Advisor</div>
-          <div class="advisor-university" style="margin:.25rem 0 .6rem;">Rice University (MS) · Amity Dubai (BS)</div>
-          <p class="advisor-desc">MS, Materials Science, Rice University. BS, Amity University Dubai. Now placed at a materials firm in California. Advises MS applicants in STEM and materials science — programme selection, SOP strategy, and application positioning.</p>
-        </div>
-      </div>
+          <div class="advisor-title">MS &amp; STEM PhD Advisor</div>
+          <div class="advisor-university" style="margin:.25rem 0 .6rem;">Rice University (MS · PhD Candidate) · Amity Dubai (BS)</div>
+          <p class="advisor-desc">MS and PhD candidate (on leave), Materials Science, Rice University. BS, Amity University Dubai. Currently placed at a materials firm in California. Advises MS and STEM PhD applicants on programme selection, SOP strategy, and application positioning.</p>
+        </div></a>
+      </div></a></a>
     </div>
   </section>
 
@@ -325,7 +336,7 @@
       <h2>Ready to Begin?</h2>
       <div class="cta-divider"></div>
       <p>Start your journey by booking a free 30-minute discovery call. We'll review your profile, discuss your targets, and map out the path forward.</p>
-      <a href="pages/contact.html" class="btn-primary">Schedule Your Free Call <span class="btn-arrow">→</span></a>
+      <a href="pages/contact.html" class="btn-primary">Reserve a Complimentary Session <span class="btn-arrow">→</span></a>
     </div>
   </section>
 
@@ -334,7 +345,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <img src="assets/img/logo-horizontal.png" alt="GradMentor">
+          <img src="assets/img/logo-horizontal-transparent.png" alt="GradMentor" style="height:42px;width:auto;">
           <div class="footer-tagline">Guide. Strategize. Succeed.</div>
         </div>
         <div class="footer-links">
@@ -374,7 +385,7 @@
   </footer>
 
   <!-- WHATSAPP FLOAT -->
-  <a href="https://wa.me/18326641844" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/918848005686" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 

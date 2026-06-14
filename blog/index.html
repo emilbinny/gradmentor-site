@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNTJX7KWZW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FNTJX7KWZW');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog — GradMentor | Admissions Insights & Strategy</title>
@@ -16,7 +24,7 @@
 
   <nav class="navbar scrolled" id="navbar">
     <div class="container">
-      <a href="/" class="navbar-logo"><img src="../assets/img/logo-horizontal.png" alt="GradMentor"></a>
+      <a href="/" class="navbar-logo"><img src="../assets/img/logo-horizontal-transparent.png" alt="GradMentor"></a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
       <ul class="nav-links" id="navLinks">
         <li><a href="/">Home</a></li>
@@ -38,65 +46,105 @@
 
   <section class="services-section section-padding">
     <div class="container">
-      <div class="blog-grid">
-        <a href="mba-narrative-typical-background.html" class="blog-card animate-in" style="text-decoration:none;">
-          <div class="blog-card-image">MBA Strategy</div>
+
+      <!-- TAG FILTER BAR -->
+      <div class="blog-filter-bar" id="blogFilterBar">
+        <button class="blog-filter-btn active" data-filter="all">All</button>
+        <button class="blog-filter-btn" data-filter="mba">MBA</button>
+        <button class="blog-filter-btn" data-filter="phd">PhD</button>
+        <button class="blog-filter-btn" data-filter="ms">MS</button>
+        <button class="blog-filter-btn" data-filter="sop">SOP</button>
+        <button class="blog-filter-btn" data-filter="career">Career</button>
+      </div>
+
+      <div class="blog-grid" id="blogGrid">
+        <a href="mba-narrative-typical-background.html" class="blog-card animate-in" style="text-decoration:none;" data-tags="mba sop">
           <div class="blog-card-content">
-            <div class="blog-tag">MBA Strategy</div>
-            <h3>How to Build a Standout MBA Application When Your Background Is "Typical"</h3>
-            <p>Engineer, consultant, IT, finance — over-represented doesn't mean unadmittable. How to find the thread that makes your profile stand out.</p>
-            <div class="blog-date">13 June 2026 · 8 min read</div>
+            <div class="blog-card-tags"><span class="blog-tag">MBA</span><span class="blog-tag">SOP</span></div>
+            <h3>How to Build a Standout MBA Application When Your Background Is &ldquo;Typical&rdquo;</h3>
+            <p>Over-represented doesn&rsquo;t mean unadmittable. How to find the narrative thread that makes your profile stand out.</p>
+            <div class="blog-date">13 June 2026 &middot; 8 min read</div>
           </div>
         </a>
-        <a href="funded-phd-application-guide-india.html" class="blog-card animate-in" style="text-decoration:none;">
-          <div class="blog-card-image">PhD Applications</div>
+        <a href="funded-phd-application-guide-india.html" class="blog-card animate-in" style="text-decoration:none;" data-tags="phd">
           <div class="blog-card-content">
-            <div class="blog-tag">PhD Applications</div>
+            <div class="blog-card-tags"><span class="blog-tag">PhD</span></div>
             <h3>How to Get a Fully Funded PhD in the US from India</h3>
-            <p>Funding types, timeline, faculty fit, the research proposal, and the application strategy that turns "funded" into the default outcome.</p>
-            <div class="blog-date">13 June 2026 · 12 min read</div>
+            <p>Funding types, timeline, faculty fit, and the strategy that makes funded admission the default outcome.</p>
+            <div class="blog-date">13 June 2026 &middot; 12 min read</div>
           </div>
         </a>
-        <a href="professor-outreach-email-phd.html" class="blog-card animate-in" style="text-decoration:none;">
-          <div class="blog-card-image">PhD Applications</div>
+        <a href="professor-outreach-email-phd.html" class="blog-card animate-in" style="text-decoration:none;" data-tags="phd">
           <div class="blog-card-content">
-            <div class="blog-tag">PhD Applications</div>
+            <div class="blog-card-tags"><span class="blog-tag">PhD</span></div>
             <h3>The Professor Outreach Email That Actually Gets a Reply</h3>
-            <p>The structure, tone, timing, and a template for cold-emailing faculty before a PhD application — in under 200 words.</p>
-            <div class="blog-date">13 June 2026 · 9 min read</div>
+            <p>The structure, tone, timing, and a template for cold-emailing faculty before a PhD application.</p>
+            <div class="blog-date">13 June 2026 &middot; 9 min read</div>
           </div>
         </a>
-        <a href="sop-mistakes-mba-phd.html" class="blog-card animate-in" style="text-decoration:none;">
-          <div class="blog-card-image">Admissions</div>
+        <a href="sop-mistakes-mba-phd.html" class="blog-card animate-in" style="text-decoration:none;" data-tags="sop mba phd">
           <div class="blog-card-content">
-            <div class="blog-tag">Admissions</div>
+            <div class="blog-card-tags"><span class="blog-tag">SOP</span><span class="blog-tag">MBA</span><span class="blog-tag">PhD</span></div>
             <h3>The SOP Mistakes That Quietly Sink Strong Applications</h3>
-            <p>Seven statement-of-purpose mistakes that get qualified MBA, MS, and PhD candidates rejected — and how to fix each one.</p>
-            <div class="blog-date">13 June 2026 · 8 min read</div>
+            <p>Seven statement-of-purpose mistakes that get qualified candidates rejected &mdash; and how to fix each one.</p>
+            <div class="blog-date">13 June 2026 &middot; 8 min read</div>
           </div>
         </a>
-        <a href="mba-vs-ms-vs-phd-which-degree.html" class="blog-card animate-in" style="text-decoration:none;">
-          <div class="blog-card-image">Admissions</div>
+        <a href="mba-vs-ms-vs-phd-which-degree.html" class="blog-card animate-in" style="text-decoration:none;" data-tags="mba ms phd">
           <div class="blog-card-content">
-            <div class="blog-tag">Admissions</div>
+            <div class="blog-card-tags"><span class="blog-tag">MBA</span><span class="blog-tag">MS</span><span class="blog-tag">PhD</span></div>
             <h3>MBA vs MS vs PhD: Which Graduate Degree Actually Fits Your Goal?</h3>
-            <p>An honest comparison by cost, time, outcome, and funding — so you choose the degree that matches the work you actually want to do.</p>
-            <div class="blog-date">13 June 2026 · 11 min read</div>
+            <p>An honest comparison by cost, time, outcome, and funding &mdash; so you choose the degree that matches the work you actually want to do.</p>
+            <div class="blog-date">13 June 2026 &middot; 11 min read</div>
           </div>
         </a>
-        <a href="post-mba-career-pivot-2026.html" class="blog-card animate-in" style="text-decoration:none;">
-          <div class="blog-card-image">Career Advisory</div>
+        <a href="post-mba-career-pivot-2026.html" class="blog-card animate-in" style="text-decoration:none;" data-tags="mba career">
           <div class="blog-card-content">
-            <div class="blog-tag">Career Advisory</div>
+            <div class="blog-card-tags"><span class="blog-tag">MBA</span><span class="blog-tag">Career</span></div>
             <h3>Post-MBA Career Pivots: What Actually Works in 2026</h3>
-            <p>Consulting, tech, finance, or entrepreneurship? A candid look at which switches are realistic and how to position for each.</p>
-            <div class="blog-date">13 June 2026 · 10 min read</div>
+            <p>A candid look at which post-MBA career switches are realistic and how to position for each.</p>
+            <div class="blog-date">13 June 2026 &middot; 10 min read</div>
           </div>
         </a>
       </div>
 
+      <div class="blog-no-results" id="blogNoResults" style="display:none;text-align:center;padding:3rem 0;color:var(--text-muted);">
+        No articles in this category yet &mdash; check back soon.
+      </div>
+
     </div>
   </section>
+
+  <script>
+    // Tag filter logic
+    const btns = document.querySelectorAll('.blog-filter-btn');
+    const cards = document.querySelectorAll('#blogGrid .blog-card');
+    const noResults = document.getElementById('blogNoResults');
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        let visible = 0;
+        cards.forEach(card => {
+          const tags = card.dataset.tags || '';
+          const show = filter === 'all' || tags.split(' ').includes(filter);
+          card.style.display = show ? '' : 'none';
+          if (show) visible++;
+        });
+        noResults.style.display = visible === 0 ? 'block' : 'none';
+      });
+    });
+
+    // Nav toggle
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    document.querySelectorAll('#navLinks a').forEach(l =>
+      l.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'))
+    );
+  </script>
+
 
   <section class="cta-section section-padding">
     <div class="container animate-in">
@@ -110,7 +158,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-brand"><img src="../assets/img/logo-horizontal.png" alt="GradMentor"><div class="footer-tagline">Guide. Strategize. Succeed.</div></div>
+        <div class="footer-brand"><img src="../assets/img/logo-horizontal-transparent.png" alt="GradMentor"><div class="footer-tagline">Guide. Strategize. Succeed.</div></div>
         <div class="footer-links">
           <div class="footer-col"><h5>Services</h5><ul><li><a href="../pages/services.html">MBA Admissions</a></li><li><a href="../pages/services.html">PhD Strategy</a></li></ul></div>
           <div class="footer-col"><h5>Company</h5><ul><li><a href="../pages/about.html">About</a></li><li><a href="./">Blog</a></li><li><a href="../pages/contact.html">Contact</a></li></ul></div>
