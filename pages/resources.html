@@ -59,6 +59,7 @@
     .spam-note strong { color: var(--gold); }
     .selected-count { font-size: 0.8rem; color: var(--gold); margin-bottom: 1rem; min-height: 1.2em; font-weight: 600; }
   </style>
+  <style>input[name="fields[resources_requested]"]{display:none!important}</style>
 </head>
 <body>
 
@@ -252,6 +253,21 @@
   </a>
 
   <script>
+    // Copy the selection into the hidden MailerLite field so it is saved with the signup
+    function syncResourcesToForm() {
+      var input = document.querySelector('input[name="fields[resources_requested]"]');
+      if (!input) return;
+      var row = input.closest('.ml-field-group') || input.parentElement;
+      if (row) row.style.display = 'none';
+      input.value = document.getElementById('selectedResourcesField').value.slice(0, 250);
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+      input.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+    if ('MutationObserver' in window) {
+      new MutationObserver(function () { syncResourcesToForm(); }).observe(document.body, { childList: true, subtree: true });
+    }
+    document.addEventListener('submit', function () { syncResourcesToForm(); }, true);
+
     // Resource selection logic
     const selected = new Set();
 
@@ -271,6 +287,7 @@
         countEl.textContent = `${count} resource${count > 1 ? 's' : ''} selected: ${Array.from(selected).join(', ')}`;
       }
       document.getElementById('selectedResourcesField').value = Array.from(selected).join(' | ');
+      syncResourcesToForm();
     }
 
     // Nav toggle
