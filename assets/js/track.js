@@ -38,10 +38,12 @@
         channel: /wa\.me/.test(href) ? "whatsapp" : "form"
       });
     }
+    if (/^upi:/.test(href)) track("pay_link_click", { page: page, method: "upi" });
     if (/calendly\.com/.test(href)) track("book_call_click", { page: page, link_url: href });
     else if (/wa\.me|whatsapp/.test(href)) track("whatsapp_click", { page: page });
     else if (/^mailto:/.test(href)) track("email_click", { page: page });
     else if (/emilbinny\.com/.test(href)) track("emilbinny_click", { page: page });
+    else if (/pay\.html/.test(href)) track("pay_intent", { page: page });
     else if (/resources\.html/.test(href)) track("toolkit_intent", { page: page });
     else if (/contact\.html/.test(href)) track("contact_intent", { page: page });
   });
