@@ -87,7 +87,9 @@
     var ok = document.querySelector(".ml-form-successBody, .ml-subscribe-form .row-success");
     if (ok && ok.offsetParent !== null) {
       leadSent = true;
-      track("toolkit_signup", { page: page });
+      var rf = document.getElementById("selectedResourcesField");
+      var picked = rf && rf.value ? rf.value.split(" | ") : [];
+      track("toolkit_signup", { page: page, resources: picked.join(" | ").slice(0, 100), resource_count: picked.length });
       track("generate_lead", { page: page, lead_type: "toolkit" });
     }
   }
