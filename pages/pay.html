@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNTJX7KWZW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FNTJX7KWZW');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Pay — GradMentor</title>
+  <meta name="description" content="Pay for a confirmed GradMentor booking by UPI, Zelle or PayPal.">
+  <meta name="robots" content="noindex, follow">
+  
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="/" class="navbar-logo"><img src="/assets/img/logo-nav.png" alt="GradMentor" style="height:56px;width:auto;"></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/pages/services.html">Services</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/pages/resources.html">Resources</a></li>
+        <li><a href="/pages/contact.html" class="nav-cta">Book a Call</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="section-overline">Payment</div>
+      <h1>How to Pay</h1>
+      <p>For bookings we have already confirmed with you by WhatsApp or email.</p>
+    </div>
+  </section>
+  <section class="section-padding">
+    <div class="container">
+      <ol class="pay-steps">
+        <li>Book first: <a href="services.html#start" style="color:var(--gold);">choose a service</a> and message us. We confirm your slot and the amount.</li>
+        <li>Pay with one of the methods below. Put your name and the service in the note.</li>
+        <li>Send the screenshot on <a href="https://wa.me/18326641844?text=Hi%20GradMentor%2C%20I%27ve%20paid.%20Screenshot%20attached." target="_blank" rel="noopener" style="color:var(--gold);">WhatsApp</a>. You get a receipt by email the same day.</li>
+      </ol>
+      <div class="pay-grid">
+        <div class="pay-card" data-pay="upi">
+          <div class="pay-for">Paying in rupees</div>
+          <h3>UPI</h3>
+          <img src="../assets/img/pay-upi-qr.jpg" alt="UPI QR code for Emil Binny, emil.binny@oksbi" loading="lazy">
+          <span class="pay-id">emil.binny@oksbi</span>
+          <div class="pay-links">
+            <a href="upi://pay?pa=emil.binny@oksbi&pn=Emil%20Binny&am=3999&cu=INR&tn=GradMentor%20Profile%20Evaluation">Pay ₹3,999 · Profile Evaluation →</a>
+            <a href="upi://pay?pa=emil.binny@oksbi&pn=Emil%20Binny&am=11999&cu=INR&tn=GradMentor%20SOP%20Review">Pay ₹11,999 · SOP &amp; Essay Review →</a>
+            <a href="upi://pay?pa=emil.binny@oksbi&pn=Emil%20Binny&am=7999&cu=INR&tn=GradMentor%20Mock%20Interview">Pay ₹7,999 · Mock Interview →</a>
+          </div>
+          <p>Scan with any UPI app. The account name shows as Emil Binny.</p>
+        </div>
+        <div class="pay-card" data-pay="zelle">
+          <div class="pay-for">Paying in dollars · US bank</div>
+          <h3>Zelle</h3>
+          <span class="pay-id">+1 832 664 1844</span>
+          <p>Send from your bank's app to this number. The recipient shows as Emil Binny. No fee.</p>
+        </div>
+        <div class="pay-card" data-pay="paypal">
+          <div class="pay-for">Paying in dollars · anywhere</div>
+          <h3>PayPal</h3>
+          <span class="pay-id">emil.binny@gmail.com</span>
+          <p>Send to this email in PayPal. Choose "goods and services" so you are covered by PayPal's buyer protection.</p>
+        </div>
+      </div>
+      <p class="pricing-note">Packages are paid 50% to start and 50% before your first submission. Need an invoice or a bank transfer instead? <a href="mailto:hello@gradmentor.org">hello@gradmentor.org</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="footer-copyright">&copy; 2026 GradMentor. All rights reserved. · <a href="/pages/privacy.html">Privacy</a></div>
+        <div class="footer-motto">Guide · Strategize · Succeed</div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('navToggle').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('open'); });
+  </script>
+  <script src="/assets/js/track.js" defer></script>
+</body>
+</html>
