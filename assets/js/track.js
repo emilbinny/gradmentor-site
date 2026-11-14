@@ -1,4 +1,7 @@
 /* GradMentor analytics events. Requires the gtag snippet in the page head. */
+/* Microsoft Clarity (session recordings and heatmaps) */
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","zdonbgc43t");
+
 (function () {
   "use strict";
   function track(name, params) {
@@ -39,6 +42,7 @@
       });
     }
     if (/^upi:/.test(href)) track("pay_link_click", { page: page, method: "upi" });
+    if (/paypal\.me/.test(href)) track("pay_link_click", { page: page, method: "paypal" });
     if (/calendly\.com/.test(href)) track("book_call_click", { page: page, link_url: href });
     else if (/wa\.me|whatsapp/.test(href)) track("whatsapp_click", { page: page });
     else if (/^mailto:/.test(href)) track("email_click", { page: page });
