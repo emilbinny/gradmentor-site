@@ -17,7 +17,7 @@
   <link rel="canonical" href="https://gradmentor.org/pages/contact.html">
   <meta property="og:title" content="Contact — GradMentor">
   <meta property="og:description" content="Book a free discovery call. We respond within 24 hours.">
-  <meta property="og:image" content="https://gradmentor.org/assets/img/logo-main.jpg">
+  <meta property="og:image" content="https://gradmentor.org/assets/img/og-card.png">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -53,8 +53,15 @@
   <section class="page-header">
     <div class="container">
       <div class="section-overline">Get In Touch</div>
-      <h1>Start Your Admissions Journey</h1>
-      <p>Book a free 30-minute discovery call, or send us a message below. We respond within 24 hours.</p>
+      <h1>Book a Free 30-Minute Call</h1>
+      <p>Pick a time below, message us on WhatsApp, or send the form. We reply within 24 hours.</p>
+    </div>
+  </section>
+
+  <section class="section-padding" style="padding-bottom:0;">
+    <div class="container">
+      <div class="calendly-inline-widget" id="calendlyEmbed" data-url="https://calendly.com/emil-binny/coffee-chat?hide_gdpr_banner=1&background_color=1a2332&text_color=f5f1eb&primary_color=c9963b" style="min-width:320px;height:700px;"></div>
+      <noscript><p style="text-align:center;"><a href="https://calendly.com/emil-binny/coffee-chat" class="btn-primary">Open the booking calendar →</a></p></noscript>
     </div>
   </section>
 
@@ -63,7 +70,7 @@
       <div class="contact-grid">
         <div class="contact-info animate-in">
           <h3>Let's Talk</h3>
-          <p>Tell us about your background, your target programmes, and your timeline. The first call is always free — no pitch, just honest advice about your profile and options.</p>
+          <p>Tell us about your background, your target programs, and your timeline. The first call is always free — no pitch, just honest advice about your profile and options.</p>
 
           <div class="contact-detail">
             <span class="contact-detail-icon">✉</span>
@@ -75,20 +82,19 @@
           </div>
           <div class="contact-detail">
             <span class="contact-detail-icon">🔗</span>
-            <a href="https://linkedin.com/company/gradmentor" target="_blank" rel="noopener">LinkedIn — GradMentor</a>
+            <a href="https://www.linkedin.com/in/emilbinny/" target="_blank" rel="noopener">LinkedIn — Emil Binny, Founder</a>
           </div>
           <div class="contact-detail">
             <span class="contact-detail-icon">📷</span>
-            <a href="https://instagram.com/gradmentor" target="_blank" rel="noopener">Instagram — @gradmentor</a>
+            <a href="https://instagram.com/_gradmentor_" target="_blank" rel="noopener">Instagram — @_gradmentor_</a>
           </div>
 
           <div class="calendly-note">
-            <p><strong>Prefer to schedule directly?</strong> Reserve a complimentary 30-minute session with Emil — choose a time that works for you.</p>
-            <a href="https://calendly.com/emil-binny/coffee-chat" target="_blank" rel="noopener" class="btn-primary" style="margin-top: 1rem; display: inline-flex;">Reserve a Complimentary Session <span class="btn-arrow">→</span></a>
+            <p><strong>Booking a paid service?</strong> Choose it in the form and we will confirm your slot and send payment details the same day.</p>
           </div>
 
           <div style="margin-top: 1.5rem; padding: 1rem; background: var(--navy-deep); border: 1px solid var(--border-subtle);">
-            <p style="font-size: 0.85rem; color: var(--text-muted);">We respond to all enquiries within 24 hours. For urgent matters, email directly or reach out on WhatsApp.</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">We respond to all inquiries within 24 hours. For urgent matters, email directly or reach out on WhatsApp.</p>
           </div>
         </div>
 
@@ -101,7 +107,7 @@
               </div>
               <div class="form-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required>
+                <input type="text" id="lastName" name="lastName">
               </div>
             </div>
             <div class="form-group">
@@ -111,23 +117,40 @@
             <div class="form-group">
               <label for="service">Service of Interest</label>
               <select id="service" name="service" required>
-                <option value="">Select a service...</option>
-                <option value="MBA Admissions Consulting">MBA Admissions Consulting</option>
-                <option value="MS & MA Admissions">MS & MA Admissions</option>
-                <option value="PhD Application Strategy">PhD Application Strategy</option>
-                <option value="Medical Admissions">Medical Admissions</option>
-                <option value="SOP / Essay Writing">SOP / Essay Writing</option>
-                <option value="Interview Preparation">Interview Preparation</option>
-                <option value="Career Strategy">Career Strategy</option>
-                <option value="Post-Admission Support">Post-Admission Support</option>
-                <option value="Other / Not sure yet">Other / Not sure yet</option>
+                <option value="">Select...</option>
+                <option value="free-call">Free 30-minute call</option>
+                <option value="profile-evaluation">Profile Evaluation ($49)</option>
+                <option value="sop-review">SOP &amp; Essay Review ($149)</option>
+                <option value="mock-interview">Mock Interview ($99)</option>
+                <option value="phd-package">Funded PhD Package</option>
+                <option value="mba-package">MBA Package</option>
+                <option value="ms-package">MS Package</option>
+                <option value="pro-bono">Pro bono place</option>
+                <option value="other">Something else</option>
               </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="intake">Target intake</label>
+                <select id="intake" name="intake">
+                  <option value="">Select...</option>
+                  <option>Fall 2027</option>
+                  <option>Spring 2028</option>
+                  <option>Fall 2028</option>
+                  <option>Later / not sure</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="whatsapp">WhatsApp number (optional)</label>
+                <input type="tel" id="whatsapp" name="whatsapp" autocomplete="tel">
+              </div>
             </div>
             <div class="form-group">
               <label for="message">Tell us about your profile & goals</label>
-              <textarea id="message" name="message" rows="5" placeholder="Your background, target programmes, timeline, and any specific questions..."></textarea>
+              <textarea id="message" name="message" rows="5" placeholder="Your background, target programs, timeline, and any specific questions..."></textarea>
             </div>
-            <input type="hidden" name="_subject" value="New GradMentor Enquiry">
+            <input type="hidden" name="_subject" value="New GradMentor Inquiry">
+            <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="landing_page">
             <input type="text" name="_gotcha" style="display:none">
             <button type="submit" class="btn-primary" style="border: none; cursor: pointer; width: 100%; justify-content: center;">Send Message <span class="btn-arrow">→</span></button>
           </form>
@@ -146,13 +169,13 @@
         <div class="footer-brand">
         <img src="../assets/img/logo-main.jpg" alt="GradMentor" style="height:48px;width:auto;"><div class="footer-tagline">Guide. Strategize. Succeed.</div></div>
         <div class="footer-links">
-          <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html">MBA Admissions</a></li><li><a href="services.html">MS & MA Guidance</a></li><li><a href="services.html">PhD Strategy</a></li><li><a href="services.html">Medical Admissions</a></li></ul></div>
+          <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html">MBA Admissions</a></li><li><a href="services.html">MS &amp; STEM PhD</a></li><li><a href="services.html">Funded PhD Strategy</a></li></ul></div>
           <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About</a></li><li><a href="../blog/">Blog</a></li>
         <li><a href="resources.html">Resources</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-          <div class="footer-col"><h5>Connect</h5><ul><li><a href="mailto:hello@gradmentor.org">hello@gradmentor.org</a></li><li><a href="https://linkedin.com/company/gradmentor" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
+          <div class="footer-col"><h5>Connect</h5><ul><li><a href="mailto:hello@gradmentor.org">hello@gradmentor.org</a></li><li><a href="https://www.linkedin.com/in/emilbinny/" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
         </div>
       </div>
-      <div class="footer-bottom"><div class="footer-copyright">&copy; 2026 GradMentor. All rights reserved.</div><div class="footer-motto">Guide · Strategize · Succeed</div></div>
+      <div class="footer-bottom"><div class="footer-copyright">&copy; 2026 GradMentor. All rights reserved. · <a href="privacy.html">Privacy</a></div><div class="footer-motto">Guide · Strategize · Succeed</div></div>
     </div>
   </footer>
 
@@ -182,6 +205,7 @@
       }
     });
   </script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   <script src="../assets/js/track.js" defer></script>
 </body>
 </html>

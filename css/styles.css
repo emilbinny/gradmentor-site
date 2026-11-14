@@ -5,7 +5,7 @@
    ======================================== */
 
 /* === FONTS === */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Instrument+Sans:wght@400;500;600&display=swap');
 
 /* === VARIABLES === */
 :root {
@@ -26,8 +26,8 @@
   --section-dark: #0f1720;
   --section-mid: #1a2332;
   --section-accent: #16202d;
-  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-body: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Fraunces', 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Instrument Sans', 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
   --max-width: 1200px;
   --gutter: clamp(1.25rem, 4vw, 3rem);
   --transition: 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -1681,3 +1681,29 @@ h1, h2, h3, h4, h5 {
   color: rgba(245,241,235,0.8) !important;
   font-family: var(--font-body) !important;
 }
+
+
+/* === NOV 2026: OFFERS, FAQ, ARTICLE KIT === */
+.pricing-amount { font-size: 1.6rem; }
+.pricing-alt { font-family: var(--font-body); font-size: 0.85rem; color: var(--text-muted); }
+.pricing-card .offer-cta { width: 100%; justify-content: center; }
+.offer-alt { display: block; text-align: center; margin-top: 0.9rem; font-size: 0.85rem; color: var(--text-muted); }
+.offer-alt:hover { color: var(--gold); }
+.pricing-note { margin-top: 2rem; text-align: center; color: var(--text-muted); font-size: 0.9rem; max-width: 760px; margin-left: auto; margin-right: auto; }
+.pricing-note a, .footer-copyright a { color: var(--gold); }
+.faq-list { max-width: 820px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid var(--border-subtle); padding: 1.1rem 0; }
+.faq-item summary { cursor: pointer; font-family: var(--font-display); font-size: 1.15rem; color: var(--text-primary); list-style: none; display: flex; justify-content: space-between; gap: 1rem; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; color: var(--gold); }
+.faq-item[open] summary::after { content: '–'; }
+.faq-item p { margin-top: 0.75rem; color: var(--text-secondary); line-height: 1.7; }
+.article-kit { display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; flex-wrap: wrap; margin: 2.5rem 0 1.5rem; padding: 1.25rem 1.5rem; border: 1px solid var(--border-gold); background: var(--section-accent); color: var(--text-secondary); }
+.article-kit strong { color: var(--gold); }
+.article-cta-alt { margin-top: 1rem; font-size: 0.9rem; }
+.article-cta-alt a { color: var(--gold); }
+.legal-body { max-width: 760px; margin: 0 auto; color: var(--text-secondary); line-height: 1.75; }
+.legal-body h2 { font-size: 1.3rem; margin: 2rem 0 0.6rem; color: var(--text-primary); }
+.legal-body a { color: var(--gold); }
+.legal-body ul { margin: 0.5rem 0 0 1.25rem; }
+@media (max-width: 640px) { .hero-stat-label { font-size: 0.7rem; } }
